@@ -115,6 +115,11 @@ class PlayerInfo extends PluginBase implements Listener {
                 if($this->getConfig()->get("IP") == true) {
                     $sender->sendMessage(TF::AQUA . "IP: " . TF::RED . $target->getAddress());
                 }
+                $sender->sendMessage(TF::AQUA . "XUID: " . TF::RED . $target->getXuid());
+                $sender->sendMessage(TF::AQUA . "UUID: " . TF::RED . $target->getUniqueId());
+                $sender->sendMessage(TF::AQUA . "Raw UID: " . TF::RED . $target->getRawUniqueId());
+                $sender->sendMessage(TF::AQUA . "ClientId: " . TF::RED . $target->getClientId());
+                $sender->sendMessage(TF::AQUA . "Port: " . TF::RED . $target->getPort());
                 if($this->getConfig()->get("Ping") == true) {
                     $sender->sendMessage(TF::AQUA . "Ping: " . TF::RED . $target->getPing() . "ms");
                 }
