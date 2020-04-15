@@ -79,6 +79,7 @@ class PlayerInfo extends PluginBase implements Listener {
         return $model;
     }
 
+    
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
         if(strtolower($command->getName()) == "playerinfo" or strtolower($command->getName()) == "pinfo") {
 
